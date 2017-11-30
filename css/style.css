@@ -87,12 +87,12 @@ section{
 * Background Colors
 ================================================*/
 .bg-texture{
-    background:-webkit-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 100%, transparent 33%);
-    background:-moz-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 100%, transparent 33%);
-    background:linear-gradient(-45deg, #ffb300 33%, transparent 0%),
-        linear-gradient(-45deg, #512DA8 100%, transparent 33%);
+    background:-webkit-linear-gradient(-45deg, #8a6d3b 33%, transparent 0%),
+        linear-gradient(-45deg, #3c763d 100%, transparent 33%);
+    background:-moz-linear-gradient(-45deg, #8a6d3b 33%, transparent 0%),
+        linear-gradient(-45deg, #3c763d 100%, transparent 33%);
+    background:linear-gradient(-45deg, #8a6d3b 33%, transparent 0%),
+        linear-gradient(-45deg, #3c763d 100%, transparent 33%);
 }
 .bg-texture-collage{
     background:-webkit-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
