@@ -145,6 +145,10 @@ section{
 .text-orange{
     color: #8a6d3b !important;
 }
+
+.text-yellow{
+    color: #f0ad4e !important;
+}
 /*===============================================
 * Icon Sizes
 ================================================*/
