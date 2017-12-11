@@ -30,4 +30,25 @@ $(function () {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+ // Global donation Count
+var count = 0;
+var epochTime = Math.floor((new Date).getTime() / 1000);
+var lastUpdateTime = 1513028651;
+var updateRate = 1;
+var lastUpdateCount = 143650233;
+var timeSinceLastUpdate = epochTime - lastUpdateTime;
+var amountSinceLastUpdate = timeSinceLastUpdate * updateRate;
+var current = lastUpdateCount + amountSinceLastUpdate;
+
+var interval = setInterval(function() {
+    count++;
+    $('.globalCount').html(numberWithCommas(count + current));
+}, updateRate * 1000);
+
+const numberWithCommas = (x) => {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+} 
+ 
+ 
 });
