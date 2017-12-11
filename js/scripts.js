@@ -41,7 +41,7 @@ var timeSinceLastUpdate = epochTime - lastUpdateTime;
 var amountSinceLastUpdate = timeSinceLastUpdate * updateRate;
 var current = lastUpdateCount + amountSinceLastUpdate;
 
-var interval = setInterval(function() {
+setInterval(function() {
     count++;
     $('.globalCount').html(numberWithCommas(count + current));
 }, updateRate * 1000);
@@ -49,7 +49,5 @@ var interval = setInterval(function() {
 const numberWithCommas = (x) => {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 } 
-
-$(window).load(interval());
  
 });
