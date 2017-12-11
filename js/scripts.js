@@ -9,7 +9,7 @@ $(function () {
 
     //scroll menu
     $(window).scroll(function () {
-        var secondFeature = $('#features').offset().top;
+        var secondFeature = $('#how').offset().top;
         var scroll = $(window).scrollTop();
         if (scroll >= 300) {
             $('.sticky-navigation').css({"top": '0px'});
