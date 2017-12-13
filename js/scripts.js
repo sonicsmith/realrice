@@ -35,16 +35,16 @@ $(function () {
 var count = 0;
 var epochTime = Math.floor((new Date).getTime() / 1000);
 var lastUpdateTime = 1513194342;
-var updateRate = 0.25;
+var updateDelay = 4;
 var lastUpdateCount = 300000;
 var timeSinceLastUpdate = epochTime - lastUpdateTime;
-var amountSinceLastUpdate = timeSinceLastUpdate * updateRate;
+var amountSinceLastUpdate = timeSinceLastUpdate * (1 / updateDelay);
 var current = lastUpdateCount + amountSinceLastUpdate;
 
 setInterval(function() {
     count++;
     $('.globalCount').html(numberWithCommas(count + current));
-}, updateRate * 1000);
+}, updateDelay * 1000);
 
 const numberWithCommas = (x) => {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
