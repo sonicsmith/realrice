@@ -34,9 +34,9 @@ $(function () {
  // Global donation Count
 var count = 0;
 var epochTime = Math.floor((new Date).getTime() / 1000);
-var lastUpdateTime = 1513028651;
-var updateRate = 1;
-var lastUpdateCount = 143650233;
+var lastUpdateTime = 1513194342;
+var updateRate = 0.25;
+var lastUpdateCount = 300000;
 var timeSinceLastUpdate = epochTime - lastUpdateTime;
 var amountSinceLastUpdate = timeSinceLastUpdate * updateRate;
 var current = lastUpdateCount + amountSinceLastUpdate;
