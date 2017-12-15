@@ -38,7 +38,7 @@ var lastUpdateTime = 1513194342;
 var updateDelay = 4;
 var lastUpdateCount = 300000;
 var timeSinceLastUpdate = epochTime - lastUpdateTime;
-var amountSinceLastUpdate = timeSinceLastUpdate * (1 / updateDelay);
+var amountSinceLastUpdate = Math.floor(timeSinceLastUpdate * (1 / updateDelay));
 var current = lastUpdateCount + amountSinceLastUpdate;
 
 setInterval(function() {
