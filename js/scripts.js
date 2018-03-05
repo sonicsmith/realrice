@@ -41,10 +41,11 @@ var timeSinceLastUpdate = epochTime - lastUpdateTime;
 var amountSinceLastUpdate = Math.floor(timeSinceLastUpdate * (1 / updateDelay));
 var current = lastUpdateCount + amountSinceLastUpdate;
 
-setInterval(function() {
-    count++;
-    $('.globalCount').html(numberWithCommas(count + current));
-}, updateDelay * 1000);
+// REMOVING LIVE COUNTER TEMPORARLY
+// setInterval(function() {
+//     count++;
+//     $('.globalCount').html(numberWithCommas(count + current));
+// }, updateDelay * 1000);
 
 const numberWithCommas = (x) => {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
